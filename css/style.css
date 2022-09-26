@@ -24,7 +24,7 @@ header{
 
 header .head-cont{
   height: 100%;
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   display: flex;
   align-items: center;
@@ -35,24 +35,27 @@ header .head-cont{
   color: white;
 }
 
-header .head-cont{
-  width: 90%;
-  height: 100%;
-}
 
 
 header ul{
   list-style: none;
   display: flex;
+  flex-shrink: 0;
+
   
 }
 
 header li{
   padding-left: 25px;
+  height: 100%;
+  
 }
+
 
 .none{
   display: none;
+  flex-shrink: 0;
+
 }
 
 /* fine header  */
@@ -136,6 +139,8 @@ header li{
   margin-top: 20px;
   margin: 0 auto;
   background-color: #FFFFFF;
+  border-radius: 30px;
+
 }
 
 .content-right img{
@@ -199,8 +204,10 @@ header li{
   width: 100%;
   background-color: #9791E4;
   padding-bottom: 30px;
+  width: 100%;
 
 }
+
 
 .benefits h2 {
   text-align: center;
@@ -208,7 +215,7 @@ header li{
 }
 
 .benefit{
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
   padding: 15px;
   background-color:#FFFFFF;
@@ -232,10 +239,18 @@ header li{
 .about-us{
   width: 90%;
   padding: 20px;
+  padding-bottom: 30px;
+  margin-bottom: 30px;
+}
+
+.us-text h2{
+  font-size: 1.5rem;
+  color: #9792E4;
 }
 
 .about-us p{
   margin-bottom: 30px;
+  color: #262626;
 
 }
 
@@ -247,6 +262,104 @@ header li{
   width: 100%;
   border-radius: 50%;
 
+}
+
+.about-us strong{
+  font-size: 1.4  rem;
+  color: #9089E1;
+}
+
+.about-us a{
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10px;
+  padding: 16px;
+  background-color: #9089E1;
+  color: #F7F7FC;
+  border-radius: 25px;
+}
+
+/* fine quinta section  */
+
+.price{
+  width: 100%;
+  background-color: #9792E5;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.price-container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.get-start{
+  display: inline-block;
+ font-family: 'Wire One', sans-serif;
+ font-size: 1.6rem;
+ color: #FFFFFF;
+ margin: 30px 0px;
+}
+
+.simple{
+  color: #FFFFFF;
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.free{
+  font-size: 3rem;
+  color: #FDC15D;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.free-text{
+  color: #FFFFFF;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.price-container .start{
+  text-decoration: none;
+  display: inline-block;
+  padding: 15px 55px;
+  margin: 15px 0px;
+  color: #9792E5;
+  background-color: #FFFFFF;
+  border-radius: 30px;
+
+  
+}
+
+.boolean{
+  font-size: 0.8rem;
+  color: #FFFFFF;
+  margin-bottom: 30px;
+}
+
+.boolean a{
+  color: #FFFFFF;
+}
+
+footer{
+  width: 100%;
+  background-color:#333232;
+  color: #D9D8D8;
+  text-align: center;
+}
+
+.foot-contain{
+  width: 60%;
+  margin: 0 auto;
+}
+
+footer p{
+  display: inline-block;
+  margin: 30px 0;
+}
+footer p a{
+  color: #7F7AB8;
 }
 
 
@@ -310,10 +423,18 @@ header li{
 
 /* fine terza section  */
 
+.con-ben{
+  width: 100%;
+  background-color: #9791E4;
+}
+
 .benefits{
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
+  width: calc(90% + 15px);
+  margin: 0 auto;
+  margin-top: 50px;
+}
 
 }
 
@@ -328,14 +449,43 @@ header li{
 
 /* fine quarta section  */
 
+.about-us{
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  margin: 0 auto;
 }
 
-
-@media screen and (min-width: 768px){ 
-  
-
+.content-us{
+  width: 40%;
+  margin-top: 60px;
 }
 
+.us-text{
+  width: 60%;
+  padding: 30px;
+}
+
+.content-us a{
+  font-size: 1.1rem;
+}
+
+/* fine quinta section  */
+
+.free-container{
+  margin: auto;
+  width: 50%;
+}
+
+.free-text{
+  color: #FFFFFF;
+  line-height: 25px;
+  margin-bottom: 15px;
+}
+
+.foot-contain{
+  width: 50%;
+}
 
 @media screen and (min-width:850px){
   header .head-cont i{
@@ -343,9 +493,38 @@ header li{
   }
 .none{
   display: block;
+  display: flex;
+  align-items: center;
+
 }
 
+.none ul li a{
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.none ul li{
+  margin-right: 30px;
+}
+
+.none .button-h{
+  padding: 15px;
+  background-color: white;
+  color: #000000;
+  text-decoration: none;
+  border-radius: 30px;
+}
+
+
+
+
+
 /* fine prima section  */
+
+.pla-con{
+  width: 100%;
+  background-color: #9791E4;
+}
 
 .planing{
   margin: 0 auto;
@@ -382,16 +561,15 @@ header li{
 
 /* fine terza section  */
 
-.benefits{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-
-}
-
-.benefits  h2{
+.con-ben{
   width: 100%;
+  background-color: #9791E5;
+  margin-top: 50px;
 }
+
+.benefits{
+  width: calc(80% + 15px);
+  margin: 0 auto;}
 
 .benefit{
   width: calc(100% / 3 - 15px );
@@ -399,6 +577,27 @@ header li{
 }
 
 /* fine quarta section  */
+.about-us{
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
 
 
+.content-us{
+  display: inline-block;
+  width: 40%;
+}
+
+.content-us strong{
+  font-size: 1.3rem;
+}
+
+.us-text{
+width: 55%;
+margin-right: 100px;
+} 
+
+/* fine quinta section  */
 }                                 
